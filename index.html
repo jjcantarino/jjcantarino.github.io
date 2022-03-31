@@ -16,22 +16,23 @@
          }
 
          .container {
+           flex-grow: 1;
              display: flex;
              flex-direction: column;
              flex-wrap: nowrap;
              justify-content: flex-start;
              align-items: stretch;
              align-content: stretch;
+             width: 100%;
          }
 
          .boxes {
             display: flex;
+  flex-grow: 1;
             flex-wrap: wrap;
-            max-height: 100vh;
+            max-height: 100%;
 
-            width:90%;
-            max-width: 1200px;
-            margin: 0 auto;
+            width:100%;
          }
 
          .box {
@@ -44,6 +45,8 @@
 
          .green { background: green; 
                      justify-content: right;
+
+  align-self: flex-end;
          }
          .blue { background: blue;}
          .pink {background: pink; justify-content: right }
