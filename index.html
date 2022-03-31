@@ -19,11 +19,10 @@
            flex-grow: 1;
              display: flex;
              flex-direction: column;
-             flex-wrap: nowrap;
              justify-content: flex-start;
              align-items: stretch;
              align-content: stretch;
-             width: 100%;
+             max-width: 100%;
          }
 
          .boxes {
@@ -96,7 +95,10 @@
       <div class="box blue">
          <!--<div style="flex:0 1 60%;min-height:100%;max-width:60%;">
             <div style="margin-top: 50vh;">
-             -->  <canvas id="standingsBarCanvas" height="128vw" style="margin-top: 0%"></canvas>
+             -->
+             <div style="flex:0 1 100%;max-height:100%;max-width:68%;">  
+               <canvas id="standingsBarCanvas" style="margin-top: 7%"></canvas>
+            </div>
            <!-- </div>
          </div>-->
       </div>
@@ -104,7 +106,7 @@
    <div class="boxes">
 
       <div class="box pink"> 
-         <div style="width: 60%; height:100%">
+         <div style="width: 40%; height:100%">
             <canvas id="doughnutCanvas"></canvas>
          </div>
       </div>
